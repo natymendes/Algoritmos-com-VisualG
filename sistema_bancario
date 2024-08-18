@@ -1,0 +1,38 @@
+Algoritmo "Banco"
+
+Var
+    saldoInicial, saldoFinal, saque, deposito: real
+    operacao: inteiro
+    continuar: inteiro
+
+Inicio
+
+    escreval("Qual o saldo atual?")
+    leia(saldoInicial)
+    saldoFinal <- saldoInicial
+
+    repita
+        escreval("Qual a operação deseja realizar?")
+        escreval("Digite 1 para saque ou 2 para depósito:")
+        leia(operacao)
+
+        se (operacao = 1) entao
+            escreva("Qual o valor deseja sacar?")
+            leia(saque)
+            saldoFinal <- saldoFinal - saque
+        senao
+            se (operacao = 2) entao
+                escreva("Qual o valor deseja depositar?")
+                leia(deposito)
+                saldoFinal <- saldoFinal + deposito
+            fimse
+        fimse
+
+        escreva("Digite 1 para continuar ou 0 para sair: ")
+        leia(continuar)
+    ate (continuar = 0)
+
+    escreval("Saldo Final: ", saldoFinal)
+
+Fimalgoritmo
+
