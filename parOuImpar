@@ -1,0 +1,15 @@
+// Verificação de número par ou ímpar
+// Utiliza o operador módulo (%) para verificar se o número é par ou ímpar.
+algoritmo "ParOuImpar"
+var
+  numero: inteiro
+inicio
+  escreva("Digite um número: ")
+  leia(numero)
+  se numero % 2 = 0 entao
+    escreval("O número é par.")
+  senao
+    escreval("O número é ímpar.")
+  fimse
+fimalgoritmo
+
